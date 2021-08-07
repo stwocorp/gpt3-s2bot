@@ -8,7 +8,6 @@ colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1602866480
 cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography_1616851485986/work
 et-xmlfile==1.0.1
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1609836280497/work
 importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1617877307939/work
 itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
 jdcal==1.4.1
