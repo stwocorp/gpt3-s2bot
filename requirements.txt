@@ -1,6 +1,6 @@
 brotlipy==0.7.0
 certifi==2021.5.30
-cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1625835307225/work
+#cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1625835307225/work
 chardet @ file:///home/conda/feedstock_root/build_artifacts/chardet_1610093492116/work
 charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1626371162869/work
 click @ file:///tmp/build/80754af9/click_1621604852318/work
@@ -8,6 +8,7 @@ colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1602866480
 cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography_1616851485986/work
 et-xmlfile==1.0.1
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1609836280497/work
 importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1617877307939/work
 itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
 jdcal==1.4.1
