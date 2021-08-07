@@ -1,3 +1,4 @@
+from gunicorn.app.wsgiapp import run
 from flask import Flask, request, session
 from twilio.twiml.messaging_response import MessagingResponse
 from s2bot import ask, append_interation_to_chat_log
@@ -18,4 +19,3 @@ def s2():
 
 if __name__ = '__main__':
     app.run(debug=True)
-    
