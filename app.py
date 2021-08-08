@@ -8,7 +8,7 @@ app.config['SECRET_KEY']='89djhf9jhkd93'
 
 @app.route('/')
 def path_root():
-    return None
+    return
 
 @app.route('/api/v2/test')
 def path_test():
@@ -19,7 +19,6 @@ def path_test():
         headers
     )
 
-#@app.route('/s2bot', methods=['POST'])
 @app.route('/s2bot', methods=['GET'])
 def path_s2bot():
     incoming_msg = request.values['BODY']
