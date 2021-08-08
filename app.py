@@ -16,5 +16,5 @@ def s2():
     msg.message(answer)
     return str(msg)
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     app.run(debug=True)
