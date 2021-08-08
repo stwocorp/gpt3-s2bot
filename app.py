@@ -15,6 +15,15 @@ def path_home():
         headers=headers
     )
 
+@app.route("/api/v2/test")
+def path_test():
+    headers = {"Content-Type": "application/json"}
+    return make_response(
+        'Test worked!',
+        200,
+        headers={"Content-Type": "application/json"}
+    )
+
 #@app.route('/s2bot', methods=['POST'])
 @app.route('/s2bot', methods=['GET'])
 def path_s2bot():
