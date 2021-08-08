@@ -19,9 +19,9 @@ def path_home():
 def path_test():
     headers = {"Content-Type": "application/json"}
     return make_response(
-        body = 'Test worked!',
-        status = 200,
-        headers = {'Content-Type' : 'application/json'}
+        'Test worked!',
+        200,
+        headers
     )
 
 #@app.route('/s2bot', methods=['POST'])
