@@ -10,9 +10,9 @@ app.config['SECRET_KEY']='89djhf9jhkd93'
 def path_root():
     return None
 
-@app.route("/api/v2/test")
+@app.route('/api/v2/test')
 def path_test():
-    headers = {"Content-Type": "application/json"}
+    headers = {'Content-Type': 'application/json'}
     return make_response(
         'Test worked!',
         200,
