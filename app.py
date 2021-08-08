@@ -6,19 +6,6 @@ app = Flask(__name__)
 # if for some reason your conversation with the bot gets weird, change the secret key
 app.config['SECRET_KEY']='89djhf9jhkd93'
 
-@app.route('/')
-def path_root():
-    return
-
-@app.route('/api/v2/test')
-def path_test():
-    headers = {'Content-Type': 'application/json'}
-    return make_response(
-        'Test worked!',
-        200,
-        headers
-    )
-
 @app.route('/s2bot', methods=['GET'])
 def path_s2bot():
     incoming_msg = request.values['BODY']
@@ -28,6 +15,15 @@ def path_s2bot():
     msg = MessagingResponse()
     msg.message(answer)
     return str(msg)
+
+@app.route('/api/v2/test')
+def path_test():
+    headers = {'Content-Type': 'application/json'}
+    return make_response(
+        'Test worked!',
+        200,
+        headers
+    )
 
 if __name__ == '__main__':
     app.run(debug=True)
