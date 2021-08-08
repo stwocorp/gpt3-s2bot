@@ -10,8 +10,8 @@ app.config['SECRET_KEY']='89djhf9jhkd93'
 def path_home():
     headers = {"Content-Type": "application/json"}
     return make_response(
-        'Test worked!',
-        200,
+        body = 'Test worked!',
+        status = 200,
         headers=headers
     )
 
@@ -19,8 +19,8 @@ def path_home():
 def path_test():
     headers = {"Content-Type": "application/json"}
     return make_response(
-        'Test worked!',
-        200,
+        body = 'Test worked!',
+        status = 200,
         headers = {'Content-Type' : 'application/json'}
     )
 
