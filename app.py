@@ -3,11 +3,11 @@ from twilio.twiml.messaging_response import MessagingResponse
 from s2bot import ask, append_interation_to_chat_log
 
 app = Flask(__name__)
-# if for some reason your conversation with the bot gets weirdm change the secret key
+# if for some reason your conversation with the bot gets weird, change the secret key
 app.config['SECRET_KEY']='89djhf9jhkd93'
 
-@app.route('/s2bot', methods=['POST'])
-def s2():
+@app.route('/s2bot', method=['POST'])
+def s2bot():
     incoming_msg = request.values['BODY']
     chat_log = session.get('chat_log')
     answer = ask(incoming_msg, chat_log)
