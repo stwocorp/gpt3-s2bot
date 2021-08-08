@@ -7,13 +7,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY']='89djhf9jhkd93'
 
 @app.route('/')
-def path_home():
-    headers = {"Content-Type": "application/json"}
-    return make_response(
-        body = 'Test worked!',
-        status = 200,
-        headers=headers
-    )
 
 @app.route("/api/v2/test")
 def path_test():
