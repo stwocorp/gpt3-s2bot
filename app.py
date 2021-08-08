@@ -6,7 +6,7 @@ app = Flask(__name__)
 # if for some reason your conversation with the bot gets weirdm change the secret key
 app.config['SECRET_KEY']='89djhf9jhdk93'
 
-@app.route('s2bot', methods=['POST'])
+@app.route('/s2bot', methods=['POST'])
 def s2():
     incoming_msg = request.values['BODY']
     chat_log = session.get('chat_log')
