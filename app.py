@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY']='89djhf9jhkd93'
 
 @app.route('/s2bot', method=['POST'])
-def s2bot():
+def s2url():
     incoming_msg = request.values['BODY']
     chat_log = session.get('chat_log')
     answer = ask(incoming_msg, chat_log)
