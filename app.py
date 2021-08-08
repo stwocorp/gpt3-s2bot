@@ -7,6 +7,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY']='89djhf9jhkd93'
 
 @app.route('/')
+def path_root():
+    return None
 
 @app.route("/api/v2/test")
 def path_test():
